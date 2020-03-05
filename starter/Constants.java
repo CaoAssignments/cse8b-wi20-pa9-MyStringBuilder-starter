@@ -1,4 +1,5 @@
 public class Constants {
+    public static final String FROM_CONSTRUCTOR = "MyStringBuilder(String)";
     public static final String FROM_APPEND_STR = "append(String)";
     public static final String FROM_INSERT_CHAR = "insert(char, int)";
     public static final String FROM_INSERT_STR = "insert(String, int)";

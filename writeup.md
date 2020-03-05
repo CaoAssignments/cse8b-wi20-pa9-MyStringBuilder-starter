@@ -108,6 +108,7 @@ You will notice that the constructors for these exceptions takes a `from` String
 
 | Constant                           | Method Signature (described in further sections)|
 | ---------------------------------- |:-----------------------------------------------:|
+| FROM_CONSTRUCTOR                   | MyStringBuilder(String str)                     |
 | FROM_APPEND_STR                    | append(String)                                  |
 | FROM_INSERT_CHAR                   | insert(char, int)                               |
 | FROM_INSERT_STR                    | insert(String, int)                             |
