@@ -108,7 +108,8 @@ You will notice that the constructors for these exceptions takes a `from` String
 
 | Constant                           | Method Signature (described in further sections)|
 | ---------------------------------- |:-----------------------------------------------:|
-| FROM_CONSTRUCTOR                   | MyStringBuilder(String str) **[constructor]**                    |
+| FROM_CONSTRUCTOR                   | MyStringBuilder(String str) **[constructor]**   |
+| FROM_DEEPCOPY_CONSTRUCTOR          | MyStringBuilder(MyStringBuilder param) **[constructor]**   |
 | FROM_APPEND_STR                    | append(String)                                  |
 | FROM_INSERT_CHAR                   | insert(char, int)                               |
 | FROM_INSERT_STR                    | insert(String, int)                             |
@@ -143,7 +144,7 @@ Our custom MyStringBuilder class will have
 * Three constructors 
   * the first constructor takes a char input and should create a MyStringBuilder with the single CharNode representing the input.
   * the second constructor creates a MyStringBuilder from a String. If the String is null, you should throw a `BadInputException`. If the String is empty, then the constructed MyStringBuilder object should also be empty (have no CharNodes). **Hint**: You should use the `append()` method of Part C for this.
-  * the third constructor constructs a MyStringBuilder using a MyStringBuilder object by deep copying its contents. Since CharNodes store their proceeding nodes inside themselves, you should start from the reference to the first charNode and deep copy all charNodes until we get to the end and construct MyStringBuilder object.
+  * the third constructor constructs a MyStringBuilder using a MyStringBuilder object by deep copying its contents. If the MyStringBuilder object is null, you should throw a `BadInputException`. Since CharNodes store their proceeding nodes inside themselves, you should start from the reference to the first charNode and deep copy all charNodes until we get to the end and construct MyStringBuilder object.
  
     For example, consider the following MyStringBuilder in the diagram: `start` points to the charNode with 'r' and `end` points to the charNode with 't'. You should
     traverse from `start` charNode till the `end` charNode and deep copy each charNode i.e. deep copying `data` and `next`.   
