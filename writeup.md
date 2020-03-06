@@ -133,6 +133,20 @@ This class/file should contain:
 **Please make sure that the getters and setters are named as above.**
 * Both the instance variables are private, so we must use getters and setters to access them. 
 
+The method signatures for getters and setters are as follows:
+- `public char getData()`<br/>
+This should return `data`.<br/>
+
+- `public CharNode getNext()`<br/>
+This should return `next`.<br/>
+
+Setters are usually void return types but here the setters are returning the objects for the purpose of testing.
+- `public CharNode setData(char newData)`<br/>
+This should update the `data` to newData and return the CharNode object.<br/>
+
+- `public CharNode setNext(CharNode newNext)`<br/>
+This should update the `next` to newNext and return the CharNode object.<br/>
+
 ### MyStringBuilder
 `public class MyStringBuilder`
 
