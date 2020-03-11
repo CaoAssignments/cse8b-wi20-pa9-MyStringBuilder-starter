@@ -339,6 +339,10 @@ A full [style guideline](https://sites.google.com/eng.ucsd.edu/cse8b-winter2020/
 ### Submit the following files to Gradescope by Mar 12, Thursday, 11:59pm:
 * **CharNode.java**
 * **MyStringBuilder.java**
+* **BadInputException.java**
+* **Constants.java**
+* **MSBOutOfBoundsException.java**
+* **MyException.java**
 
 **Well done!**
 **With that, we have wrapped up the last assignment in Intro to Computer Science: Java II.**
